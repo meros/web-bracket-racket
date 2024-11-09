@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Include viewport meta tag for proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Include Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500&display=swap" rel="stylesheet">
@@ -16,25 +20,25 @@
             background-color: #F4F4F4;
             display: flex;
             flex-direction: column;
-            align-items: center;
             min-height: 100vh;
         }
         .content-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
             flex-grow: 1;
-            padding-top: 40px;
-            max-width: 900px;
-            width: 100%;
+            padding-top: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .logo-container {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .logo-image {
-            max-height: 40%;
-            max-width: 70%;
+            max-width: 400px;
+            width: 100%;
             height: auto;
         }
         .tagline {
@@ -42,9 +46,10 @@
             font-weight: 400;
             font-size: 20px;
             text-align: justify;
-            margin: 0 auto 40px;
             line-height: 1.6;
-            padding: 0 40px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
         }
         .contact {
             width: 100%;
@@ -78,53 +83,42 @@
         /* Media queries for responsiveness */
         @media (max-width: 1024px) {
             .content-container {
-                padding-top: 30px;
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-top: 50px;
+            }
+            .logo-container {
+                margin-bottom: 30px;
             }
             .logo-image {
-                max-width: 60%;
+                max-width: 350px;
             }
             .tagline {
                 font-size: 18px;
+                max-width: 700px;
                 margin-bottom: 30px;
-                padding: 0 20px;
             }
         }
         @media (max-width: 768px) {
             .content-container {
-                padding-top: 20px;
+                padding-top: 40px;
+            }
+            .logo-container {
+                margin-bottom: 25px;
             }
             .logo-image {
-                max-width: 75%;
+                max-width: 300px;
             }
             .tagline {
-                font-size: 16px;
+                font-size: 17px;
+                max-width: 90%;
+                margin-bottom: 25px;
                 padding: 0 15px;
             }
             .contact a {
-                font-size: 16px;
+                font-size: 17px;
             }
-        }
-        @media (max-width: 480px) {
-            .content-container {
-                padding-top: 20px;
-            }
-            .logo-image {
-                max-width: 80%;
-            }
-            .tagline {
-                font-size: 15px;
-                padding: 0 10px;
-                margin-bottom: 20px;
-            }
-            .contact {
-                flex-direction: column;
-                gap: 15px;
-                padding: 15px;
-            }
-            .contact a {
-                font-size: 14px;
+            .icon {
+                height: 26px;
+                margin-right: 10px;
             }
         }
     </style>
