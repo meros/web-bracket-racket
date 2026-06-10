@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bracket Racket AB - Expert Software Engineering</title>
-    <meta name="description" content="Freelance software engineering by Alexander Schrab. 2 decades of full-stack, embedded, and cloud expertise.">
+    <title>Bracket Racket AB — Software engineering, personally delivered</title>
+    <meta name="description" content="Freelance software engineering by Alexander Schrab. Two decades across full-stack, embedded systems, and cloud infrastructure.">
+    <meta name="theme-color" content="#0B0B0B">
+    <meta property="og:title" content="Bracket Racket AB">
+    <meta property="og:description" content="Software engineering, personally delivered. Two decades across full-stack, embedded systems, and cloud infrastructure.">
+    <link rel="icon" type="image/png" href="logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,800;9..144,900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,800;1,9..144,800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -24,6 +28,11 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: var(--bg);
         }
 
         html {
@@ -96,12 +105,13 @@
             color: var(--text);
             margin-bottom: 32px;
             letter-spacing: -0.02em;
+            text-wrap: balance;
             opacity: 0;
             animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
         }
 
         .tagline em {
-            font-style: normal;
+            font-style: italic;
             color: var(--accent);
         }
 
@@ -131,6 +141,7 @@
         .contact {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 14px;
             opacity: 0;
             animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.65s forwards;
@@ -151,6 +162,12 @@
         .contact a:hover {
             color: var(--accent-hover);
             transform: translateX(4px);
+        }
+
+        .contact a:focus-visible {
+            outline: 1px solid var(--accent);
+            outline-offset: 4px;
+            color: var(--accent-hover);
         }
 
         .contact a svg {
@@ -215,10 +232,6 @@
                 margin-bottom: 36px;
             }
 
-            .bracket {
-                display: none;
-            }
-
             footer {
                 padding: 20px 28px;
             }
@@ -255,7 +268,7 @@
             <div class="divider" aria-hidden="true"></div>
 
             <p class="body">
-                I'm Alexander Schrab — 2 decades building software across full-stack, embedded systems, and cloud infrastructure. I work directly with you: no layers, no handoffs, just focused engineering and clear communication.
+                I'm Alexander Schrab. Two decades across full-stack, embedded systems, and cloud infrastructure. You work with me directly — no layers, no handoffs. Focused engineering, straight answers.
             </p>
 
             <div class="contact">
