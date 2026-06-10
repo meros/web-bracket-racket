@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bracket Racket AB — Software engineering, personally delivered</title>
-    <meta name="description" content="Independent software engineering by Alexander Schrab. Two decades across full-stack, embedded systems, and cloud infrastructure. Recent work for Apple, ASSA ABLOY, and Norban.">
+    <meta name="description" content="Independent software engineering by Alexander Schrab. Two decades across full-stack, embedded systems, and cloud infrastructure.">
     <meta name="theme-color" content="#0B0B0B">
     <meta property="og:title" content="Bracket Racket AB">
     <meta property="og:description" content="Software engineering, personally delivered. Two decades across full-stack, embedded systems, and cloud infrastructure.">
@@ -138,29 +138,12 @@
         }
 
         .body.spot {
-            margin-bottom: 28px;
+            margin-bottom: 48px;
         }
 
         .body strong {
             font-weight: 400;
             color: var(--text);
-        }
-
-        /* Client strip */
-        .clients {
-            font-size: 0.68rem;
-            font-weight: 400;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 48px;
-            opacity: 0;
-            animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.575s forwards;
-        }
-
-        .clients span {
-            color: var(--accent);
-            padding: 0 4px;
         }
 
         /* Contact links */
@@ -259,10 +242,6 @@
             }
 
             .body.spot {
-                margin-bottom: 24px;
-            }
-
-            .clients {
                 margin-bottom: 36px;
             }
 
@@ -283,7 +262,7 @@
 
         /* Reduced motion */
         @media (prefers-reduced-motion: reduce) {
-            .logo, .tagline, .divider, .body, .clients, .contact, footer {
+            .logo, .tagline, .divider, .body, .contact, footer {
                 opacity: 1;
                 animation: none;
                 transform: none;
@@ -308,8 +287,6 @@
             <p class="body spot">
                 <strong>Short engagements, sharp scope:</strong> technical due diligence, code and architecture review, cloud cost analysis, AI coding strategy.
             </p>
-
-            <p class="clients">Recent work — Apple <span>·</span> ASSA ABLOY <span>·</span> Norban (CTO)</p>
 
             <div class="contact">
                 <a href="mailto:alexander.schrab@gmail.com">
